@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <context-param>
+        <param-name>initialseed</param-name>
+        <param-value>2</param-value>
+    </context-param>
+    <error-page>
+        <error-code>404</error-code>
+        <location>/errorHandler.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/actionNotAllowed.jsp</location>
+    </error-page>
+
+</web-app>
